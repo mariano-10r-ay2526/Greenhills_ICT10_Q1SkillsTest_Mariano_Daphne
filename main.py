@@ -10,9 +10,9 @@ def create_order(e):
 
     # Calculate subtotal by multiplying value by checked status (1 or 0)
     subtotal = float(prod1.value) * prod1.checked
-    subtotal = float(prod2.value) * prod1.checked
-    subtotal = float(prod3.value) * prod1.checked
-    subtotal = float(prod4.value) * prod1.checked
+    subtotal = float(prod2.value) * prod2.checked
+    subtotal = float(prod3.value) * prod3.checked
+    subtotal = float(prod4.value) * prod4.checked
     display(subtotal, target="show")
 
     # Calculate VAT by getting 12% of the subtotal
