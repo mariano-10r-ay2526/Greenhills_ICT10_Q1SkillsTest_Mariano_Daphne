@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+
+    <!-- LINKS -->
+     <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+</head>
+<body>
+
+   <h1>OBMC Entrep Fair Group 1 - Filipino Restaurant</h1>
+   <br>
+   <h2>Filipino Restaurant:</h2>
+
+   <!-- MENU -->
+   <div id="container-fluid">
+    <div class="row">
+
+    <form>
+        <input type="checkbox" id="food1" value="310">
+        <label id="food1-label">Adobo - P310</label><br>
+        <input type="checkbox" id="food2" value="99">
+        <label id="food2-label">Halo-halo - P99</label><br>
+        <input type="checkbox" id="food3" value="310">
+        <label id="food3-label">Pork Sinigang - P310</label><br>
+        <input type="checkbox" id="food4" value="85">
+        <label id="food4-label">Gulaman - P85</label><br>
+
+        <button type="submit" py-click="create_order">Create Order</button><br><br>
+
+        <div id="show">
+            <h2>Receipt:</h2>
+            <p>Subtotal:</p>
+            <p>VAT:</p>
+            <p>Total:</p>
+        </div>
+
+    </form>
+</div>
+</div>
+
+
+<py-script src="main.py"></py-script>
+</body>
+</html>
